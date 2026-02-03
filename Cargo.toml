@@ -1,0 +1,19 @@
+[package]
+name = "poker_solver"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.26" # Framework gráfico (wrapper de egui)
+egui = "0.26"   # UI Library
+poker = "0.4"   # Lógica de evaluación de manos
+strum = { version = "0.26", features = ["derive"] } # Utilidades para enums
+strum_macros = "0.26"
+
+[[bin]]
+name = "poker_solver"
+path = "src/main.rs"
+
+[[bin]]
+name = "debug_hand"
+path = "src/debug_hand.rs"
